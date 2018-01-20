@@ -1,0 +1,283 @@
+Breakout Changelog
+==================
+
+2.0.7 - 12/11/2015
+------------------
+
+* Fixed: Site Identity section in customizer not showing.
+* Fixed: Minor admin styling issues with WordPress 4.3.
+* Fixed: Display issues with new post embedding, introduced in WordPress 4.4.
+* Removed: Non-working Tabs element selections for placing navigation.
+
+--------------------------------------------------------------
+
+2.0.6.1 - 08/08/2015
+------------------
+
+* Fixed: Some of the new FontAwesome files were dropped from the last update.
+
+--------------------------------------------------------------
+
+2.0.6 - 08/07/2015
+------------------
+
+* Updated to FontAwesome 4.4.0.
+* Fixed: Minor PHP warnings around retrieving posts by category from shortcodes.
+* Fixed: Minor admin compatibility issue with WPML 3.2 update.
+
+--------------------------------------------------------------
+
+2.0.5 - 04/24/2015
+------------------
+
+* Removed logo options from customizer; use *Appearance > Theme Options* instead.
+* Fixed: Theme-generated styles from theme options not getting applied in WordPress 4.2+
+
+--------------------------------------------------------------
+
+2.0.4 - 04/21/2015
+------------------
+
+* Updated to Bootstrap 3.3.4.
+* Updated to FontAwesome 4.3.0.
+* Fixed: Security vulnerabilities from `add_query_arg()` (see [here](https://make.wordpress.org/plugins/2015/04/20/fixing-add_query_arg-and-remove_query_arg-usage/))
+
+--------------------------------------------------------------
+
+2.0.3 - 01/25/2015
+------------------
+
+* Fixed duplicate closing `</a>` bug with dropdowns menus of main navigation.
+* Minor security fix.
+
+--------------------------------------------------------------
+
+2.0.2 - 11/25/2014
+------------------
+
+* Important security fix.
+* Updated user documentation included in theme package, including new videos for Layout Builder plugin v2 update.
+
+--------------------------------------------------------------
+
+2.0.1 - 05/15/2014
+------------------
+
+* Fixed main menu's home button bug on tablet view.
+
+--------------------------------------------------------------
+
+2.0.0 - 05/12/2014
+------------------
+
+*Warning: Make sure to read this article before updating: [Updating to theme with framework 2.3+](http://support.themeblvd.com/updating-to-framework-v2-3/)*
+
+* **Updated Theme Blvd framework to 2.4.4**
+* Admin styling adjustments for WordPress 3.8+
+* Improvements and fixes for WordPress 3.6+
+	* Added support for WordPress 3.5+ media uploader.
+	* Added responsive support for self-hosted videos.
+	* Added responsive support for self-hosted audio files.
+	* Resulting pagination from using `<!--nextpage-->` is now filtered to output like framework's pagination.
+* Added [Twitter Bootstrap](http://twitter.github.io/bootstrap/) 3.1 and [FontAwesome](http://fortawesome.github.io/Font-Awesome/) 4.
+	* Complete CSS overhaul.
+	* Basic HiDPI (i.e. Retina) support added to main layout elements.
+	* Tons of responsive improvements for mobile devices and tablets.
+	* Improved mobile appearance when responsive design is turned *off*.
+	* Icon-support added to WordPress's menu builder.
+	* Styling enhancements for WordPress's "Custom Menu" widget when used in sidebars.
+	* All Bootstrap components and javascript available for use within your custom HTML and Child themes.
+* Layout Builder functionality moved to [Theme Blvd Layout Builder](http://wordpress.org/plugins/theme-blvd-layout-builder/) plugin.
+	* Now edit custom layouts directly from the Edit Page screen, in addition to the Builder.
+	* Minor UI improvements for managing layouts.
+	* Can now edit layout names and ID's after creating them.
+* Slider functionality moved to [Theme Blvd Sliders](http://wordpress.org/plugins/theme-blvd-sliders/) plugin.
+	* [Nivo](http://dev7studios.com/nivo-slider/) slider type added.
+	* [Bootstrap Carousel](http://getbootstrap.com/javascript/#carousel) slider type added.
+	* No more fixed CSS heights on sliders any where.
+	* Height limits on slider videos is now controlled when editing a slider.
+	* Custom image size selection added.
+	* Full-size image links added.
+	* Buttons on full-width image slides removed; use image link instead.
+	* Post Slider added, which generates standard slider from a set of posts.
+	* Minor UI improvements for managing sliders.
+	* Can now edit slider names and ID's after creating them.
+	* Sliders now displayed on frontend much more efficiently.
+	* Much more extendable for developers.
+* Custom widget area functionality moved to [Theme Blvd Widget Areas](http://wordpress.org/plugins/theme-blvd-widget-areas/) plugin.
+	* Custom [conditional support](http://codex.wordpress.org/Conditional_Tags) for assigning widget areas added.
+	* Can now apply custom sidebars directly while editing pages, if you like.
+	* Minor UI improvements for managing widget areas.
+* Widgets moved to [Theme Blvd Widget Pack](http://wordpress.org/plugins/theme-blvd-widget-pack/) plugin.
+	* Twitter widget has been removed; use [Tweeple](http://wordpress.org/plugins/tweeple/) plugin instead.
+	* Horizontal menu widget added for collapsible widget areas.
+	* Mini Post Grid can now take a standard gallery.
+* Shortcodes moved to [Theme Blvd Shortcodes](http://wordpress.org/plugins/theme-blvd-shortcodes/) plugin.
+	* Many new shortcodes and enhancements added for Twitter Bootstrap integration.
+	* New `[gallery_slider]` shortcode to quickly create sliders -- Ex: `[gallery_slider ids="1,2,3"]`
+	* A lot of current shortcodes have changed, but with backward compatibility in mind.
+	* Lightbox shortcode added with Auto Lightbox feature. ([See video](https://vimeo.com/65843469))
+	* The `[icon]` shortcode now accepts custom icons; simply create an "icons" folder in your Child theme.
+	* New general documentation website for shortcode usage. [shortcodes.themeblvd.com](http://shortcodes.themeblvd.com)
+* Default lightbox integration now uses [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/).
+	* Huge improvements to responsive handling.
+	* Corresponding setup options added to *Appearance > Theme Options > Content > Lightbox*.
+	* Google map support added for lightbox popups.
+	* Get prettyPhoto back by activating the [Theme Blvd prettyPhoto](http://wordpress.org/plugins/theme-blvd-prettyphoto/) plugin (with HiDPI/Retina support added).
+* Theme Options updates.
+	* Minor UI enhancements.
+	* Added option to select color of social media icons.
+	* Added HiDPI (Retina) support for logo option.
+	* Added new lightbox options.
+	* Removed "Accent Color" option.
+	* Removed "Tan" selection from content color option.
+	* Removed analytics option ([use plugin](http://wordpress.org/plugins/simple-analytics/)).
+* Enhanced developer love.
+	* Huge framework improvements to the API system, database querying, and performance.
+	* Tons of new filters and actions added.
+	* CSS files re-arranged for easier Child theme CSS mods; now use style.css.
+	* A lot of code re-formatting, commenting and overall cleanup for better organization and readability.
+	* Still continuing to grow the developer documentation. [dev.themeblvd.com](http://dev.themeblvd.com).
+
+--------------------------------------------------------------
+
+1.1.4 - 06/02/2012
+------------------
+
+* Fixed bug with customizer clearing social icons saved from Theme Options page.
+* Updated FlexSlider jQuery plugin to v2.0 and made adjustments it's compatible. This shouldn't make any immediate difference in your theme, but will allow us to add functionality in the future. **If you're using the Theme Blvd News Scroller widget, make sure to update it!**
+* Hooked in new function to WordPress's "pre get posts" action that adjusts the true "posts per page" setting for custom homepage layouts that contain a paginated element.
+* Added frontend locals.php file to API directory. This allows it to be accessed by any 3rd-party plugin that may be trying to access fronted text strings when is_admin is true, for whatever reason. Specifically, this issue was brought about by the [AJAX Comment Loading](http://wordpress.org/extend/plugins/ajax-comment-loading/) plugin.
+* Fixed bug with localization not working on text strings included within API areas like Theme Options.
+
+--------------------------------------------------------------
+
+1.1.3 - 07/02/2012
+------------------
+
+* Added compatibility with WordPress 3.4 Customizer.
+* Added optional pause on hover feature to standard slider options.
+* Added alt tags to images in sliders for you SEO folks.
+* Added title as accepted parameter for img tags when saving theme textareas.
+* Fixed Lucida Grande font selection from Theme Options.
+* Removed clear:both; CSS on header tags.
+* Updated all admin modules to work with [this tutorial](http://www.wpjumpstart.com/tutorial/changing-user-role-access-for-admin-modules/).
+* Improved display of image attachments for attachment.php
+* Fixed pagination for single posts with wp link pages function.
+* Fixed search form to work with WP sites installed in sub-directories different than the site url.
+* Adjusted responsive images for IE8 and below.
+* Fixed PHP warning when saving Content element of the Layout Builder and no floating widgets areas exist.
+* Adjusted slider mobile fallback to display shortcodes in descriptions.
+* Adjusted so when no custom layouts have been created, you won't see any message about custom layouts under "Page Attributes" until you attempt to select the "Custom Layout" page template.
+* Added specific support for WordPress Multisite signup page.
+* Added stripslashes to titles of tabs to allow apostrophes.
+* Styled mobile fallback for sliders to look nicer.
+* Fixed option for header when selecting if you chose a light or dark background color.
+
+--------------------------------------------------------------
+
+1.1.2 - 06/02/2012
+------------------
+
+* Fixed issues with small thumbnails in post lists and archives after previous update. -- After making this update, although it is not required in all cases, it's suggested that you re-generate your thumbnails.
+* Adjusted header social icons so they open in a new window if they aren't the email icon.
+
+--------------------------------------------------------------
+
+1.1.1 - 05/26/2012
+------------------
+
+* Fixed responsiveness of header logo and social icons for mobile devices.
+* Fixed shortcode generator not inserting [icon_link] properly.
+* Adjusted styling on shortcode generator.
+* Added TB_THEME_NAME constant for internal processes.
+* Improved overall localization for upcoming "Theme Blvd WPML Bridge" plugin. Frontend text strings now have a separate gettext domain.
+* Added frontend theme location support and styling for upcoming "Theme Blvd WPML Bridge" plugin.
+* Responsive CSS fixes to allow images to be re-sized in Visual editor, but still remain responsive.
+* Fixed issues with conflicting native WordPress thumbnail sizes -- small, medium, and large.
+* Fixed mobile select menu primary navigation to look consistent no matter what style options are selected.
+* Re-generated PO file.
+
+--------------------------------------------------------------
+
+1.1.0 - 05/20/2012
+------------------
+
+* **Updated to Theme Blvd Framework 2.1.0.**
+* Added many new styling theme options. -- *Make sure to visit your theme options after updating.*
+* Tweaked theme design a bit with header and footer.
+* Added option for text string under social icons in header.
+* Improved drop down menus on mobile for "graphic" style menu.
+* Added display options for post lists, archives, and post grids.
+* Adjusted sidebar layouts to have less space in between columns and more space on content areas; this is most noticeable on double-sidebar layouts.
+* Increased font size on mobile devices and tablets.
+* Added option to switch main navigation into simple select menu on mobile devices.
+* Adjusted slider design so if nav arrows and nav buttons are hidden, nav area will be hidden.
+* Increased font size on mobile devices and tablets.
+* Added basic print CSS styles.
+* Adjusted some background images that were too light with Tan content color.
+* Styled featured images of post grids to look nicer on wider mobile devices like iPhone landscape mode.
+
+--------------------------------------------------------------
+
+1.0.3 - 01/28/2012
+------------------
+
+* Updated to Theme Blvd Framework 2.0.5.
+* Adjusted Post List and Post Grid page templates so that the title will show according to option selected under Page Options.
+* Removed most old IE transparency filters.
+* I still do not claim the theme is fully compatible with IE7, but I did adjust the CSS so main navigation drop down menus will appear correctly on top of sliders in IE7.
+* Added frames to images in [gallery].
+* Altered how theme adds image sizes so they can be filtered from plugin or child theme.
+* Adjusted how viewport meta tag is set in head of the site depending on whether you have responsive design turned on or off.
+* Integrated comments better into framework's internal front-end localization filter.
+* Fixed YouTube filter to fix YouTube's wmode bug in their native embed code.
+* Adjusted Changelog link on theme options page to open in lightbox popup.
+* Fixed Picasa icon of social icon selections.
+* Added "themeblvd_footer_copyright" filter to footer copyright text option output for use in plugins.
+* Added "themeblvd_post_thumbnail" filter for use in plugins.
+* Now allowing input of 1 column in [post_grid] shortcode.
+* Adjusted recent tweet element to use caching.
+* Updated FlexSlider jQuery plugin to v1.8
+* Added iframe as accepted HTML tag in content areas of the framework.
+* Fixed bug with Featured area of custom layouts showing on Homepage with no featured elements.
+* In generating [icon] shortcode from TinyMCE shortcode generator, fixed mug icon and added additional icons.
+* Now toggle shortcode accepts shortcodes within along with WordPress automatic formatting.
+* Re-generated localization file.
+
+--------------------------------------------------------------
+
+1.0.2 - 01/14/2012
+------------------
+
+* Fixed initial bug with "Theme Blvd Simple Contact" widget where the field titled "Link #5 URL" was not saving properly.
+
+--------------------------------------------------------------
+
+1.0.1 - 12/28/2011
+------------------
+
+* Updated to Theme Blvd Framework 2.0.4.
+* Now when you turn off responsive design in your Theme Options, your site will have a fixed 960px width across all devices.
+* Edited some descriptions on Theme Options page to try and avoid confusion with some options.
+* Fixed bug with Slider Builder and needing text in "Link URL" field when hitting "Insert into Slider" button.
+* Added Lucida Sans to selectable web font in Theme Options.
+* Added new widget - "Theme Blvd Simple Contact"
+* On post list/post grid short code generator, link=true/false will now be inserted properly.
+* Compressed some CSS files in admin panel.
+* Improved caching with Twitter widget to avoid the error message that kept coming up, "No public Tweets."
+* Fixed breadcrumbs options not working correctly on archives, 404, and search results pages.
+* Added first-element/last-element CSS classes to elements in custom layouts.
+* Added additional CSS classes to standard slider effected by options user selects.
+* Adjusted output of custom images you setup with rel="themeblvd_lightbox" so they aren't directly effected in the same way featured images are.
+* Adjusted how toggle shortcode works. Now use "last" in last toggle of set - [toggle title="Example" last]Toggle text.[/toggle]
+* Edited some wording of option descriptions for clarity under Post Options and Page Options meta boxes.
+* Under Appearance > Theme Options you can now see the current theme version, framework version, and a link to the latest update log.
+* Added several actions and filters for developers throughout different items of the framework.
+
+--------------------------------------------------------------
+
+1.0.0 - 12/19/2011
+------------------
+
+* This is the first release constructed from Theme Blvd Framework version 2.0.2.

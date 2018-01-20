@@ -1,0 +1,129 @@
+Commodore Changelog
+===================
+
+3.0.14 - 01/18/2018
+-------------------
+
+* Added support for Theme Blvd Layout Builder v2.2.
+* Improvement: Removed "fancy selects" styling on select menus throughout theme's admin UI components; we're now relying on default WordPress admin styling for standard select menus.
+
+--------------------------------------------------------------
+
+3.0.13 - 08/04/2017
+-------------------
+
+* Fixed: Problems saving multi-check option types on newer versions of PHP.
+
+--------------------------------------------------------------
+
+3.0.12 - 08/02/2017
+--------------------
+
+* Improvement: Minor JavaScript improvements and fixes.
+* Fixed: PHP errors in some server setups with querying categories of post display elements of layout builder.
+
+--------------------------------------------------------------
+
+3.0.11 - 04/18/2017
+--------------------
+
+* Updated to FontAwesome 4.7.0.
+
+--------------------------------------------------------------
+
+3.0.10 - 01/18/2017
+--------------------
+
+* Fixed: Duplicate titles on archives, when set to show, in WordPress 4.7.
+* Fixed: Occasional display issues on archives and search results, due to `is_page_template()` bug in WordPress 4.7.
+
+--------------------------------------------------------------
+
+3.0.9 - 06/21/2016
+------------------
+
+* Fixed: Minor WPML PHP warnings.
+
+--------------------------------------------------------------
+
+3.0.8 - 12/11/2015
+------------------
+
+* Fixed: Site Identity section in customizer not showing.
+* Fixed: Minor admin styling issues with WordPress 4.3.
+* Fixed: Minor PHP error caused by inactive background texture CSS output.
+* Fixed: Display issues with new post embedding, introduced in WordPress 4.4.
+* Removed: Non-working Tabs element selections for placing navigation.
+
+--------------------------------------------------------------
+
+3.0.7.1 - 08/08/2015
+------------------
+
+* Fixed: Some of the new FontAwesome files were dropped from the last update.
+
+--------------------------------------------------------------
+
+3.0.7 - 08/07/2015
+------------------
+
+* Updated to FontAwesome 4.4.0.
+* Fixed: Minor PHP warnings around retrieving posts by category from shortcodes.
+* Fixed: Minor admin compatibility issue with WPML 3.2 update.
+
+--------------------------------------------------------------
+
+3.0.6 - 04/24/2015
+------------------
+
+* Added default WordPress background options back to customizer, which can override the theme's background presets.
+* Removed header options from customizer; use *Appearance > Theme Options* instead.
+* Fixed: Theme-generated styles from theme options not getting applied in WordPress 4.2+
+
+--------------------------------------------------------------
+
+3.0.5 - 04/21/2015
+------------------
+
+* Updated to Bootstrap 3.3.4.
+* Updated to FontAwesome 4.3.0.
+* Fixed: Security vulnerabilities from `add_query_arg()` (see [here](https://make.wordpress.org/plugins/2015/04/20/fixing-add_query_arg-and-remove_query_arg-usage/))
+
+--------------------------------------------------------------
+
+3.0.4 - 01/26/2015
+------------------
+
+* Fixed duplicate closing `</a>` bug with dropdowns menus of main navigation.
+* Minor security fix.
+
+--------------------------------------------------------------
+
+3.0.3 - 11/26/2014
+------------------
+
+* Important security fix.
+* Updated user documentation included in theme package, including new videos for Layout Builder plugin v2 update.
+
+--------------------------------------------------------------
+
+3.0.2 - 05/09/2014
+------------------
+
+* Fixed minor HTML error with "Commodore Homepage" sample layout in the Layout Builder.
+
+--------------------------------------------------------------
+
+3.0.1 - 05/08/2014
+------------------
+
+* Improved RTL stylesheet.
+* Added default PO file for localization.
+
+--------------------------------------------------------------
+
+3.0.0 - 05/15/2014
+------------------
+
+* Theme re-released under the new name, *Commodore*, formally known as *Complexity*.
+* Theme re-built on Theme Blvd Framework 2.4.
